@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<link rel="icon" href="../../rocket.ico">
     <script type="text/javascript" src="../../js/jquery.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
 </head>
@@ -71,7 +72,7 @@
 		<section class="wrapper">
 			
 			<div class="content">
-				<h2>先上实物</h2>
+				<h3>2017.11</h3>
 			<p style=" max-width: 544px;max-height: 544px; display: inline-block;">
 				<video   controls="controls" preload="auto" width= 100% height=100%  >
 					<source src="OUTPU.mp4" type="video/mp4">
@@ -85,20 +86,16 @@
 				
 				<h3>想法</h3>
 
-				<p>起源于寒冷的冬天，每每到关灯的时候非常但蛋疼，开关不在床边，不想离开温暖的被窝。
-				脑子里蹦出几个想法
-				<br>$1改造一下开关的线路，分一个到床头？小区物业应该不同意。 放弃
-				<br>$2买个声控灯泡？没意思
-				<br>$3自己做一个模仿人关灯的动作  就它了	
+				<p>冬天每每到关灯的时候非常但蛋疼，开关不在床边，不想离开被窝。搞个好玩的吧	
 				</p>
 				
 				<h3>过程</h3>
 				<P>开始搜索合适硬件。。。。。。发现了nodemcu，真心不错，这里转抄他们的广告语“一款开源快速硬件原型平台，包括固件和开发板，用几行简单的Lua脚本就能开发物联网应用”，选定SG90小舵机还有路由器和一块不用的移动电源。
-				<br>开始上手调试，lua什么鬼，摘自维基：Lua是一个简洁、轻量、可扩展的脚本语言，其目标是成为一个很容易嵌入其它语言中使用的语言。大多数程序员也认为它的确做到了这一点。很多应用程序使用Lua作为自己的嵌入式脚本语言，以此来实现可配置性、可扩展性。开始看手学习nodemcu良心的地方手册相识适合新手上手
-				<br><br>确定技术方案———机械开关起server服务，手机作为客户端(client)访问，连在同一局域网。手臂3D打印
-				<br><br>try,try,try...实现了所有基本功能
-				<br><br>如何交互——— 做一个好看实用的页面，简单醒目显示当前状态。
-				<br><br>实施环节———模型设计好了经过3d打印机两次打样测试，完美契合下面预留的紧固螺丝有点多余 &nbsp;&nbsp;:）&nbsp;&nbsp;,装好之后第一次尝试，不出意料失败，观察发现是小舵机的力矩不够开关摁不下去 &nbsp;&nbsp;:(&nbsp;&nbsp;，不管先吃个饭，想到一个点子加速蓄能，每一次拨动动作，先反方向移动留出尽量多加速空间，这样在手臂的动能和舵机的扭矩共同作用下，一切变得如此有意思，晚上打开浏览器伴随着一声清脆的关灯声音，睡觉...
+				<br>开始上手调试，平台采用lua开发，一查发觉lua小而美
+				<br><br>确定方案———机械开关起server服务，手机作为客户端(client)访问，连在同一局域网。手臂3D打印
+				<br><br>try,try,try...实现了基本功能
+				<br><br>做了一个简单醒目的页面，显示当前状态和控制
+				<br><br>实施环节———模型设计好了经过3d打印机两次打样测试，完美契合下面预留的紧固螺丝有点多余 &nbsp;&nbsp;:）&nbsp;&nbsp;,装好之后第一次尝试，不出意料失败，观察发现是小舵机的力矩不够开关摁不下去 &nbsp;&nbsp;:(&nbsp;&nbsp;，后来想到一个点子，先反方向移动留出尽量多加速空间，这样在手臂的动能和舵机的扭矩共同作用下，灯灭了...
 				</P>
 				<h3>summary</h3>
 				<p>硬件：路由器， WiFi单片机，壳拨片(3D打印)</p>
